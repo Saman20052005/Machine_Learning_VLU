@@ -1,0 +1,5 @@
+Train: 48
+Test: 12
+R2 hai bien: 0.969757
+R2 chi dien tich: 0.9622
+Them so phong co cai thien mo hinh so voi chi dung dien tich, nhung muc cai thien la nho.

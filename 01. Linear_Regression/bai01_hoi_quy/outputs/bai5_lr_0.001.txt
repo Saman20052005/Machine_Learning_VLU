@@ -1,0 +1,2 @@
+Learning rate 0.001: MSE tai vong 200 = 20.2175
+Learning rate 0.001 qua nho nen sau 200 vong chua den diem toi uu.

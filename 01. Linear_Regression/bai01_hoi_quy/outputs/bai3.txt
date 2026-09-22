@@ -1,0 +1,4 @@
+w = -0.037858
+b = 6.983593
+w am cho thay tuoi nha tang thi gia du doan giam theo mo hinh nay.
+Tuy nhien, chi dau am cua w chua du chung minh tuoi nha va gia co quan he tuyen tinh chat che.

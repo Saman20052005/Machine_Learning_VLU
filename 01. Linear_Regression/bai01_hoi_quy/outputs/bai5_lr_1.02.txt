@@ -1,0 +1,2 @@
+Learning rate 1.02: MSE tai vong 200 = 290391782.0192
+Learning rate 1.02 qua lon nen thuat toan vuot qua diem toi uu va phan ky.
