@@ -1,0 +1,230 @@
+========================================================================
+code/e1_khoang_cach.py
+========================================================================
+KHOANG CACH EUCLID: d(u,v) = sqrt(sum((u-v)^2))
+Vi du (10,5) va (13,9): 5.0
+Chua chuan hoa: d(A,B) = 102.2
+Chua chuan hoa: d(A,C) = 3000.0
+Do lech chuan (gio_on, diem_giua_ky, chi_tieu): [   7.82    2.09 1691.67]
+Sau chuan hoa: d(A,B) = 3.85
+Sau chuan hoa: d(A,C) = 1.79
+
+Ban moi: on 12 gio, diem giua ky 6.5. Nam lang gieng:
+Dong  67: gio= 10.5; diem= 6.4; d=0.198; qua
+Dong  71: gio= 12.5; diem= 6.1; d=0.202; qua
+Dong  54: gio= 14.0; diem= 6.4; d=0.260; qua
+Dong  69: gio=  9.5; diem= 6.1; d=0.373; rot
+Dong   4: gio= 10.5; diem= 5.8; d=0.386; qua
+Bo phieu: 4 qua, 1 rot
+Du doan: qua mon
+Chi_tieu co thang do lon nen chi phoi khoang cach khi chua chuan hoa.
+Khi danh gia mo hinh, chi tinh thong so chuan hoa tren tap train.
+
+========================================================================
+code/e2_chuan_hoa.py
+========================================================================
+ANH HUONG CUA CHUAN HOA (k=7)
+Luon doan qua mon: 0.6000
+Ba cot, khong chuan hoa       : 0.5333
+Ba cot, co chuan hoa          : 0.8667
+Bo chi_tieu, co chuan hoa     : 0.9000
+Pipeline chi fit StandardScaler tren train, sau do transform test.
+Chuan hoa xu ly thang do; bo cot khong lien quan con giup giam nhieu.
+
+========================================================================
+code/e3_chon_k.py
+========================================================================
+CHON K BANG KIEM DINH CHEO 5 PHAN TREN TAP TRAIN
+k= 1: CV accuracy=0.7778
+k= 3: CV accuracy=0.8489
+k= 5: CV accuracy=0.8444
+k= 7: CV accuracy=0.8444
+k= 9: CV accuracy=0.8444
+k=11: CV accuracy=0.8533
+k=13: CV accuracy=0.8667 <- tot nhat
+k=15: CV accuracy=0.8622
+k=17: CV accuracy=0.8533
+k=19: CV accuracy=0.8622
+k=21: CV accuracy=0.8622
+k=23: CV accuracy=0.8578
+k=25: CV accuracy=0.8622
+k=27: CV accuracy=0.8622
+k=29: CV accuracy=0.8622
+k=31: CV accuracy=0.8622
+k=33: CV accuracy=0.8667
+k=35: CV accuracy=0.8667
+k=37: CV accuracy=0.8667
+k=39: CV accuracy=0.8622
+k=41: CV accuracy=0.8489
+k=43: CV accuracy=0.8578
+k=45: CV accuracy=0.8533
+k=47: CV accuracy=0.8489
+k=49: CV accuracy=0.8444
+k=51: CV accuracy=0.8533
+
+k tot nhat = 13; CV accuracy = 0.8667
+Accuracy test cua mo hinh da chon = 0.9200
+
+Bang minh hoa hoc vet/cau tha sau khi da khoa k; khong dung de chon k:
+  k    Train     Test
+  1   1.0000   0.8000
+  5   0.8756   0.9067
+ 13   0.8844   0.9200
+ 31   0.8667   0.8933
+101   0.8311   0.8533
+k=1: diem train la lang gieng cua chinh no; train=1 khong bao dam tong quat.
+k rat lon lam tron bien qua muc; chon k bang CV, khong bang bang test.
+
+========================================================================
+code/e4_so_sanh.py
+========================================================================
+SO SANH TREN HAI VANG TRANG, CUNG TRAIN/TEST
+LogisticRegression      : accuracy = 0.8533
+GaussianNB              : accuracy = 0.8533
+KNN k=13 (theo de)      : accuracy = 0.9200
+Logistic co bien tuyen tinh; GaussianNB phu thuoc gia dinh Gaussian tung lop.
+KNN bam theo cau truc cuc bo nen co the theo duoc hai vang trang.
+
+========================================================================
+code/e5_knn_hoi_quy.py
+========================================================================
+MAE TREN TAP TEST (TY DONG)
+KNN k=5       : 0.4030
+LinearRegression: 0.2578
+
+Dien tich    KNN    Duong thang
+       60    4.95          5.12
+      100    8.32          8.24
+      150    9.32         12.13
+      250    9.32         19.91
+Nam lang gieng can 250 m2: [117.5, 115.9, 111.7, 111.2, 104.2]
+KNN uniform lay trung binh gia hang xom: ngoai vung du lieu, tap hang xom
+o dau bien khong doi nen du doan phang. Duong thang van keo dai xu huong.
+
+========================================================================
+baitap04/bai1.py
+========================================================================
+BAI 1: KNN TU VIET, k=13, EUCLID, KHONG CHUAN HOA NHU DE
+Train: 225; test: 75
+Accuracy tu viet = 0.9200
+Accuracy sklearn = 0.9200
+So du doan khac nhau = 0
+
+Giai thich: tinh khoang cach toi tung mau train, sap tang dan bang argsort,
+lay 13 nhan gan nhat, dem so phieu va chon lop nhieu phieu nhat.
+k=13 le va chi co hai lop nen khong hoa phieu. Ham van xu ly hoa
+bang cach chon nhan nho nhat, giong quy uoc bo phieu cua sklearn.
+Cung du lieu, metric va k nen cung ket qua; accuracy bang nhau thoi chua du,
+vi vay chuong trinh con kiem tra tung nhan du doan.
+Neu hoa khoang cach o vi tri k, ham uu tien thu tu dong train;
+backend sklearn co the chon khac. Bo nay khong gay lech du doan.
+
+========================================================================
+baitap04/bai2.py
+========================================================================
+BAI 2: KHOANG CACH EUCLID VA MANHATTAN
+CV 5 phan tren train, k le tu 1 den 51; hoa thi lay k nho nhat.
+Metric        k tot    CV acc   Test acc
+euclidean       13    0.8667     0.9200
+manhattan       27    0.8667     0.9067
+
+Manhattan - Euclid tren test: -0.0133 (-1.33 diem %).
+Euclid = sqrt(sum(delta^2)); Manhattan = sum(abs(delta)).
+Doi metric doi thu tu hang xom va co the doi k duoc chon;
+chenh lech tren mot lan chia nho khong chung minh metric nao luon tot hon.
+
+========================================================================
+baitap04/bai3.py
+========================================================================
+BAI 3: DOI CHI_TIEU TU NGHIN DONG SANG TRIEU DONG, k=7
+Cung dong train/test cho moi cau hinh.
+Don vi         Chuan hoa   Accuracy
+Nghin dong     False     0.5333
+Nghin dong     True      0.8667
+Trieu dong     False     0.8667
+Trieu dong     True      0.8667
+
+Da kiem tra: du lieu test sau chuan hoa tuong duong, nhan du doan trung nhau.
+Chua chuan hoa: d^2 = delta_gio^2 + delta_diem^2 + delta_chi_tieu^2.
+Chia chi_tieu cho 1000 lam thanh phan binh phuong cua no giam 1 trieu lan,
+doi thu tu lang gieng du thong tin thuc te khong doi.
+Sau chuan hoa, voi a=1/1000: (a*x-a*mu)/(a*sigma)=(x-mu)/sigma.
+Do a duong, doi don vi khong doi khoang cach chuan hoa (tru sai so so thuc).
+Pipeline fit scaler rieng tren train; khong chuan hoa truoc khi chia.
+
+========================================================================
+baitap04/bai4.py
+========================================================================
+BAI 4: LANG GIENG CO TRONG SO, KHOANG CACH EUCLID
+  k    Weights    Train acc    Test acc
+  1   uniform      1.0000      0.8000
+  1   distance     1.0000      0.8000
+ 13   uniform      0.8844      0.9200
+ 13   distance     1.0000      0.9333
+101   uniform      0.8311      0.8533
+101   distance     1.0000      0.9067
+
+k=101: distance - uniform = +0.0533 (+5.33 diem %).
+Trong so w=1/d uu tien diem gan, giam anh huong diem xa khi k lon,
+nen co the giu duoc cau truc cuc bo va bot lam tron qua muc.
+Ket qua thuc te o bang tren; khong dam bao weights=distance luon tot hon.
+k=1: chi mot phieu nen hai cach cho cung nhan.
+Khoang cach 0: sklearn chi dung cac hang xom trung diem de tranh chia 0.
+Voi distance, diem train trung chinh no nen train=1 khong chung minh mo hinh tot.
+
+========================================================================
+baitap04/bai5.py
+========================================================================
+BAI 5: CHON K HOI QUY BANG CV 5 PHAN TREN TRAIN
+Chi dung dien_tich nhu muc 6; MAE tinh bang ty dong.
+  k    CV MAE (duong)
+  1   0.416444
+  2   0.349800
+  3   0.371422
+  4   0.361817
+  5   0.381573
+  6   0.400167
+  7   0.399048
+  8   0.409786
+  9   0.417123
+ 10   0.436531
+ 11   0.450010
+ 12   0.469522
+ 13   0.499164
+ 14   0.515298
+ 15   0.528953
+ 16   0.559529
+ 17   0.574817
+ 18   0.589126
+ 19   0.613035
+ 20   0.625446
+
+k tot nhat = 2; CV MAE = 0.349800
+Test MAE KNN = 0.486667
+Test MAE LinearRegression = 0.257784
+KNN co MAE thap hon duong thang? Khong
+MAE cang nho cang tot; neg_MAE cang lon (gan 0) cang tot.
+Chi chon k bang train CV; khong dieu chinh k sau khi xem test.
+KNN lay trung binh cuc bo, con duong thang tan dung xu huong tuyen tinh;
+chon k khong bao dam vuot mo hinh phu hop voi cau truc that cua du lieu.
+
+========================================================================
+baitap04/bai6.py
+========================================================================
+BAI 6: THOI GIAN FIT VA PREDICT 1000 MAU MOI
+Python 3.11.9, sklearn 1.9.1, AMD64
+k=5, algorithm=auto, n_jobs=1; trung vi 5 lan, don vi ms.
+Du lieu/nhan ngau nhien, seed=0; sinh du lieu nam ngoai khoang do.
+  N train   Fit (ms)   Predict (ms)   Backend
+     1000      1.790          4.138   kd_tree
+    10000      9.144          4.861   kd_tree
+   100000    125.848          7.908   kd_tree
+
+Nhan xet: KNN luu du lieu, khong toi uu mot bo trong so/toan cuc khi fit.
+Predict moi tim hang xom va bo phieu, nen goi la hoc luoi (lazy learning).
+Auto o du lieu 2 chieu chon KD-tree: fit van can xay chi muc, khong mien phi.
+KD-tree giup predict khong phai duyet tat ca diem nhu brute-force;
+vi vay thoi gian predict co the tang cham hoac dao dong, khong tang tuyen tinh.
+Brute-force co chi phi khoang O(n_train*n_query*d) cho phan tinh khoang cach.
+Thoi gian phu thuoc CPU, tai may, backend va du lieu; khong suy ra do phuc tap
+chi tu ba phep do, cung khong bat buoc fit phai nhanh hon predict voi moi N.

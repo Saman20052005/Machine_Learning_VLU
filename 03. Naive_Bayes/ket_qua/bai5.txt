@@ -1,0 +1,13 @@
+BAI 5: CHON SAI BIEN THE NAIVE BAYES
+So sinh vien: 120; train: 90; test: 30
+MultinomialNB : accuracy = 0.8000
+GaussianNB    : accuracy = 0.9000
+
+Chuong trinh khong bao loi vi ca hai dac trung deu khong am.
+MultinomialNB chap nhan so thuc khong am, nhung gio on va diem
+khong phai so dem cac loai su kien trong mo hinh multinomial.
+No bien hai dai luong khac don vi thanh thanh phan dem, lam sai
+y nghia xac suat; doi don vi gio sang phut cung co the doi ket qua.
+GaussianNB mo ta mat do lien tuc bang trung binh va phuong sai
+tung dac trung theo lop, phu hop hon ve loai du lieu.
+Accuracy tren mot tap nho khong chung minh gia dinh phan phoi dung.

@@ -1,0 +1,17 @@
+BAI 6: THOI GIAN FIT VA PREDICT 1000 MAU MOI
+Python 3.11.9, sklearn 1.9.1, AMD64
+k=5, algorithm=auto, n_jobs=1; trung vi 5 lan, don vi ms.
+Du lieu/nhan ngau nhien, seed=0; sinh du lieu nam ngoai khoang do.
+  N train   Fit (ms)   Predict (ms)   Backend
+     1000      1.790          4.138   kd_tree
+    10000      9.144          4.861   kd_tree
+   100000    125.848          7.908   kd_tree
+
+Nhan xet: KNN luu du lieu, khong toi uu mot bo trong so/toan cuc khi fit.
+Predict moi tim hang xom va bo phieu, nen goi la hoc luoi (lazy learning).
+Auto o du lieu 2 chieu chon KD-tree: fit van can xay chi muc, khong mien phi.
+KD-tree giup predict khong phai duyet tat ca diem nhu brute-force;
+vi vay thoi gian predict co the tang cham hoac dao dong, khong tang tuyen tinh.
+Brute-force co chi phi khoang O(n_train*n_query*d) cho phan tinh khoang cach.
+Thoi gian phu thuoc CPU, tai may, backend va du lieu; khong suy ra do phuc tap
+chi tu ba phep do, cung khong bat buoc fit phai nhanh hon predict voi moi N.

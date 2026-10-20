@@ -1,0 +1,32 @@
+BAI 5: CHON K HOI QUY BANG CV 5 PHAN TREN TRAIN
+Chi dung dien_tich nhu muc 6; MAE tinh bang ty dong.
+  k    CV MAE (duong)
+  1   0.416444
+  2   0.349800
+  3   0.371422
+  4   0.361817
+  5   0.381573
+  6   0.400167
+  7   0.399048
+  8   0.409786
+  9   0.417123
+ 10   0.436531
+ 11   0.450010
+ 12   0.469522
+ 13   0.499164
+ 14   0.515298
+ 15   0.528953
+ 16   0.559529
+ 17   0.574817
+ 18   0.589126
+ 19   0.613035
+ 20   0.625446
+
+k tot nhat = 2; CV MAE = 0.349800
+Test MAE KNN = 0.486667
+Test MAE LinearRegression = 0.257784
+KNN co MAE thap hon duong thang? Khong
+MAE cang nho cang tot; neg_MAE cang lon (gan 0) cang tot.
+Chi chon k bang train CV; khong dieu chinh k sau khi xem test.
+KNN lay trung binh cuc bo, con duong thang tan dung xu huong tuyen tinh;
+chon k khong bao dam vuot mo hinh phu hop voi cau truc that cua du lieu.

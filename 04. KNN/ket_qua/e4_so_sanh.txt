@@ -1,0 +1,6 @@
+SO SANH TREN HAI VANG TRANG, CUNG TRAIN/TEST
+LogisticRegression      : accuracy = 0.8533
+GaussianNB              : accuracy = 0.8533
+KNN k=13 (theo de)      : accuracy = 0.9200
+Logistic co bien tuyen tinh; GaussianNB phu thuoc gia dinh Gaussian tung lop.
+KNN bam theo cau truc cuc bo nen co the theo duoc hai vang trang.

@@ -1,0 +1,18 @@
+BAI 6: LOP HIEM VA XAC SUAT TIEN NGHIEM
+Du lieu moi: 180 tin thuong, 20 tin rac, tong 200 tin.
+Train (thuong, rac): [135, 15]
+Test  (thuong, rac): [45, 5]
+Tien nghiem (thuong, rac): [0.9 0.1]
+Accuracy  = 0.9800
+Precision = 1.0000
+Recall rac (pos_label=1) = 0.8000
+TN = 45; FP = 0; FN = 1; TP = 4
+
+Luon doan thuong: accuracy = 0.9000; recall rac = 0.0000
+Nhan xet: accuracy cao chua du ket luan bo loc tot vi 90% tin la thuong.
+Ngay ca bo loc bo qua toan bo tin rac van dat accuracy 90%.
+Prior 0.9/0.1 nghieng ve lop thuong: dau hieu tu phai bu lai loi the 9:1.
+Chi 15 tin rac de hoc con lam uoc luong xac suat tu kem on dinh.
+Can xem recall rac de biet bao nhieu rac bi lot, kem precision/FP
+de tranh chan nham tin thuong. Test chi co 5 tin rac: moi tin doi recall 20%.
+Khong suy rong chat luong tu mot lan chia nho; can them du lieu kiem tra.

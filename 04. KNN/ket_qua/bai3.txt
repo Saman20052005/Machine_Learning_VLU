@@ -1,0 +1,15 @@
+BAI 3: DOI CHI_TIEU TU NGHIN DONG SANG TRIEU DONG, k=7
+Cung dong train/test cho moi cau hinh.
+Don vi         Chuan hoa   Accuracy
+Nghin dong     False     0.5333
+Nghin dong     True      0.8667
+Trieu dong     False     0.8667
+Trieu dong     True      0.8667
+
+Da kiem tra: du lieu test sau chuan hoa tuong duong, nhan du doan trung nhau.
+Chua chuan hoa: d^2 = delta_gio^2 + delta_diem^2 + delta_chi_tieu^2.
+Chia chi_tieu cho 1000 lam thanh phan binh phuong cua no giam 1 trieu lan,
+doi thu tu lang gieng du thong tin thuc te khong doi.
+Sau chuan hoa, voi a=1/1000: (a*x-a*mu)/(a*sigma)=(x-mu)/sigma.
+Do a duong, doi don vi khong doi khoang cach chuan hoa (tru sai so so thuc).
+Pipeline fit scaler rieng tren train; khong chuan hoa truoc khi chia.

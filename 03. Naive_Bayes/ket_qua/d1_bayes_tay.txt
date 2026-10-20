@@ -1,0 +1,12 @@
+VI DU 1: XET NGHIEM BENH
+P(benh | duong tinh) = 0.5000
+Ty le mac benh   Hau nghiem khi duong tinh
+         0.001   0.0902
+         0.010   0.5000
+         0.050   0.8390
+         0.100   0.9167
+         0.500   0.9900
+
+VI DU 2: HAI DAY CHUYEN SAN XUAT
+P(day B | san pham loi) = 0.5556
+Dem tren 1000 san pham: A co 8 loi, B co 10 loi: 0.5556

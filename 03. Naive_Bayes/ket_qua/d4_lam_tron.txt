@@ -1,0 +1,31 @@
+Tu dien co 18 tu:
+bai chieu click gia giam gui hop khuyen lieu mai ngay nhom nop tai tap thay thuong trung
+Tu             Rac  Thuong
+bai              0       1
+chieu            0       1
+click            1       0
+gia              1       0
+giam             1       0
+gui              0       1
+hop              0       1
+khuyen           1       0
+lieu             0       1
+mai              1       2
+ngay             1       0
+nhom             0       2
+nop              0       1
+tai              0       1
+tap              0       1
+thay             0       1
+thuong           2       0
+trung            2       0
+
+Tin nhan thu: trung thuong bai tap
+alpha = 0.0: rac = 0.0000000000; thuong = 0.0000000000
+Ket luan: thuong
+alpha = 1.0: rac = 0.0000073212; thuong = 0.0000021656
+Ket luan: rac
+Khong lam tron: ca hai diem bang 0; ket luan khi hoa chi la quy uoc.
+Lop rac chua gap 'bai', lop thuong chua gap 'trung'.
+Laplace cong alpha vao so dem, tranh xac suat 0 cho tu trong tu dien.
+Tu ngoai tu dien bi bo qua; lam tron khong them tu moi vao tu dien.

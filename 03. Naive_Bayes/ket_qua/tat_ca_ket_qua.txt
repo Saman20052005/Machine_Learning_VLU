@@ -1,0 +1,239 @@
+========================================================================
+code/d1_bayes_tay.py
+========================================================================
+VI DU 1: XET NGHIEM BENH
+P(benh | duong tinh) = 0.5000
+Ty le mac benh   Hau nghiem khi duong tinh
+         0.001   0.0902
+         0.010   0.5000
+         0.050   0.8390
+         0.100   0.9167
+         0.500   0.9900
+
+VI DU 2: HAI DAY CHUYEN SAN XUAT
+P(day B | san pham loi) = 0.5556
+Dem tren 1000 san pham: A co 8 loi, B co 10 loi: 0.5556
+
+========================================================================
+code/d2_tui_tu.py
+========================================================================
+Kich thuoc bang: (300, 2)
+So tin theo nhan (0: thuong, 1: rac):
+la_rac
+0    180
+1    120
+Ty le tin rac: 0.4000
+
+Ba tin nhan dau tien:
+[0] cáo gửi cáo thầy nhóm cáo gửi có cho
+[1] miễn giảm ngay hạn miễn tay nhé thưởng cho nhanh
+[0] cho bạn mai gửi nhóm bài chiều
+
+Kich thuoc bang dem tu: (300, 40)
+So tu trong tu dien: 40
+
+Muoi tu xuat hien nhieu nhat trong tin rac:
+       thuong  rac
+tay         3   48
+ngay        4   47
+nhanh       9   44
+chót        6   43
+giảm        6   42
+lúc        39   42
+quà         8   41
+click       5   40
+phí         6   40
+miễn        4   39
+
+Muoi tu xuat hien nhieu nhat trong tin thuong:
+       thuong  rac
+thầy       74    7
+bài        73    4
+cáo        72    8
+chiều      68    8
+ạ          65    7
+tài        64   11
+tập        63    6
+gửi        61   10
+lớp        60    2
+nhóm       58    7
+
+========================================================================
+code/d3_loc_thu_rac.py
+========================================================================
+So tin de hoc: 225; so tin de kiem tra: 75
+TN = 45; FP = 0; FN = 4; TP = 26
+Accuracy  = 0.9467
+Precision = 1.0000
+Recall    = 0.8667
+
+Thu tren ba tin nhan moi:
+[RAC] P(rac) = 1.0000: trúng thưởng khuyến mãi nhanh tay click ngay
+[thuong] P(rac) = 0.0000: họp nhóm báo cáo chiều mai phòng 305
+[thuong] P(rac) = 0.0000: bạn gửi giúp em tài liệu bài tập nhé
+
+========================================================================
+code/d4_lam_tron.py
+========================================================================
+Tu dien co 18 tu:
+bai chieu click gia giam gui hop khuyen lieu mai ngay nhom nop tai tap thay thuong trung
+Tu             Rac  Thuong
+bai              0       1
+chieu            0       1
+click            1       0
+gia              1       0
+giam             1       0
+gui              0       1
+hop              0       1
+khuyen           1       0
+lieu             0       1
+mai              1       2
+ngay             1       0
+nhom             0       2
+nop              0       1
+tai              0       1
+tap              0       1
+thay             0       1
+thuong           2       0
+trung            2       0
+
+Tin nhan thu: trung thuong bai tap
+alpha = 0.0: rac = 0.0000000000; thuong = 0.0000000000
+Ket luan: thuong
+alpha = 1.0: rac = 0.0000073212; thuong = 0.0000021656
+Ket luan: rac
+Khong lam tron: ca hai diem bang 0; ket luan khi hoa chi la quy uoc.
+Lop rac chua gap 'bai', lop thuong chua gap 'trung'.
+Laplace cong alpha vao so dem, tranh xac suat 0 cho tu trong tu dien.
+Tu ngoai tu dien bi bo qua; lam tron khong them tu moi vao tu dien.
+
+========================================================================
+code/d5_gaussian.py
+========================================================================
+GaussianNB: accuracy = 0.9000
+LogisticRegression: accuracy = 0.9000
+
+Thong so hoc duoc (gio_on, diem_giua_ky):
+Lop 0: trung binh = [8.1757 3.9865]
+       do lech chuan = [5.2943 1.9191]
+Lop 1: trung binh = [20.0283  6.6962]
+       do lech chuan = [5.8102 1.496 ]
+Tien nghiem: [0.4111 0.5889]
+
+Du doan bon sinh vien moi:
+ gio_on  diem_giua_ky  P(qua_mon)
+      5        4.0000      0.0137
+     13        6.0000      0.6550
+     20        7.0000      0.9855
+     28        9.0000      0.9999
+
+========================================================================
+baitap03/bai1.py
+========================================================================
+BAI 1: BAYES VOI BA NGUYEN NHAN
+P(qua) = 0.50*0.95 + 0.30*0.70 + 0.20*0.30
+       = 0.7450
+P(Hoc deu | qua mon) = 0.637584 (63.76%)
+P(Hoc don | qua mon) = 0.281879 (28.19%)
+P(It hoc | qua mon) = 0.080537 (8.05%)
+Tong hau nghiem = 1.000000
+Nhan xet: nhom hoc deu chiem 50% ban dau nhung chiem
+63.76% trong so nguoi qua mon, do ty le qua cua nhom nay cao.
+
+========================================================================
+baitap03/bai2.py
+========================================================================
+BAI 2: TU NAO TO CAO MANH NHAT (HOC TOAN BO 300 TIN)
+Diem = log P(tu|rac) - log P(tu|thuong)
+
+5 tu nghieng ve tin rac:
+mãi          +3.203435
+tay          +2.905600
+ngay         +2.661837
+miễn         +2.479516
+trúng        +2.374155
+
+5 tu nghieng ve tin thuong:
+lớp          -2.612187
+em           -2.561756
+bài          -2.294553
+báo          -2.274074
+phòng        -2.274074
+
+Diem duong ung ho lop rac; diem am ung ho lop thuong.
+Xep hang theo ty so xac suat, khong chi theo tan suat tho.
+
+========================================================================
+baitap03/bai3.py
+========================================================================
+BAI 3: DOI THAM SO LAM TRON
+   Alpha   Accuracy  Precision     Recall
+   0.001     0.9467     1.0000     0.8667
+   0.100     0.9467     1.0000     0.8667
+   1.000     0.9467     1.0000     0.8667
+  10.000     0.9467     1.0000     0.8667
+ 100.000     0.9467     1.0000     0.8667
+
+Nhan xet: alpha qua lon keo P(tu|lop) ve 1/V, lam mat
+suc phan biet cua tu; tien nghiem lop thuong dan chi phoi.
+Trong gioi han alpha tien toi vo cung, mo hinh chon lop pho bien.
+Tren tap nay, cac alpha co the cung ket qua; khong suy ra alpha vo hai.
+Khong chon alpha toi uu bang tap test; can tap validation rieng.
+
+========================================================================
+baitap03/bai4.py
+========================================================================
+BAI 4: BO LOC TU VIET VA MULTINOMIALNB
+Tap hoc: 225; tap test: 75; tu dien: 40
+Accuracy tu viet      = 0.9467
+Accuracy MultinomialNB = 0.9467
+So du doan khac nhau  = 0
+Sai so diem log lon nhat = 1.421e-14
+
+Giai thich: score(k) = log P(k) + sum count(tu)*log P(tu|k).
+P(tu|k) = (dem(tu,k)+alpha)/(tong_tu(k)+alpha*V).
+Laplace tranh log(0); cong log tranh tran duoi khi nhan nhieu so nho.
+Hai bo loc cung tap chia, cach tach tu, tu dien, alpha va tien nghiem,
+nen cho cung diem (sai so so thuc rat nho) va cung du doan.
+Tu ngoai tu dien bi bo qua; tin khong co tu da biet chi dung prior.
+Neu lech: kiem tra lower(), tu mot ky tu, so lan lap, mau so alpha*V,
+va viec chi hoc tu dien tren tap train, khong hoc lai tren tap test.
+
+========================================================================
+baitap03/bai5.py
+========================================================================
+BAI 5: CHON SAI BIEN THE NAIVE BAYES
+So sinh vien: 120; train: 90; test: 30
+MultinomialNB : accuracy = 0.8000
+GaussianNB    : accuracy = 0.9000
+
+Chuong trinh khong bao loi vi ca hai dac trung deu khong am.
+MultinomialNB chap nhan so thuc khong am, nhung gio on va diem
+khong phai so dem cac loai su kien trong mo hinh multinomial.
+No bien hai dai luong khac don vi thanh thanh phan dem, lam sai
+y nghia xac suat; doi don vi gio sang phut cung co the doi ket qua.
+GaussianNB mo ta mat do lien tuc bang trung binh va phuong sai
+tung dac trung theo lop, phu hop hon ve loai du lieu.
+Accuracy tren mot tap nho khong chung minh gia dinh phan phoi dung.
+
+========================================================================
+baitap03/bai6.py
+========================================================================
+BAI 6: LOP HIEM VA XAC SUAT TIEN NGHIEM
+Du lieu moi: 180 tin thuong, 20 tin rac, tong 200 tin.
+Train (thuong, rac): [135, 15]
+Test  (thuong, rac): [45, 5]
+Tien nghiem (thuong, rac): [0.9 0.1]
+Accuracy  = 0.9800
+Precision = 1.0000
+Recall rac (pos_label=1) = 0.8000
+TN = 45; FP = 0; FN = 1; TP = 4
+
+Luon doan thuong: accuracy = 0.9000; recall rac = 0.0000
+Nhan xet: accuracy cao chua du ket luan bo loc tot vi 90% tin la thuong.
+Ngay ca bo loc bo qua toan bo tin rac van dat accuracy 90%.
+Prior 0.9/0.1 nghieng ve lop thuong: dau hieu tu phai bu lai loi the 9:1.
+Chi 15 tin rac de hoc con lam uoc luong xac suat tu kem on dinh.
+Can xem recall rac de biet bao nhieu rac bi lot, kem precision/FP
+de tranh chan nham tin thuong. Test chi co 5 tin rac: moi tin doi recall 20%.
+Khong suy rong chat luong tu mot lan chia nho; can them du lieu kiem tra.

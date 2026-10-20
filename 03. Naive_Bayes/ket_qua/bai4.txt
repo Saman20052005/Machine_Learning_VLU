@@ -1,0 +1,15 @@
+BAI 4: BO LOC TU VIET VA MULTINOMIALNB
+Tap hoc: 225; tap test: 75; tu dien: 40
+Accuracy tu viet      = 0.9467
+Accuracy MultinomialNB = 0.9467
+So du doan khac nhau  = 0
+Sai so diem log lon nhat = 1.421e-14
+
+Giai thich: score(k) = log P(k) + sum count(tu)*log P(tu|k).
+P(tu|k) = (dem(tu,k)+alpha)/(tong_tu(k)+alpha*V).
+Laplace tranh log(0); cong log tranh tran duoi khi nhan nhieu so nho.
+Hai bo loc cung tap chia, cach tach tu, tu dien, alpha va tien nghiem,
+nen cho cung diem (sai so so thuc rat nho) va cung du doan.
+Tu ngoai tu dien bi bo qua; tin khong co tu da biet chi dung prior.
+Neu lech: kiem tra lower(), tu mot ky tu, so lan lap, mau so alpha*V,
+va viec chi hoc tu dien tren tap train, khong hoc lai tren tap test.

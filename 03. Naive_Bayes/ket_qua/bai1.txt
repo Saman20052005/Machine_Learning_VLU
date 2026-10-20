@@ -1,0 +1,9 @@
+BAI 1: BAYES VOI BA NGUYEN NHAN
+P(qua) = 0.50*0.95 + 0.30*0.70 + 0.20*0.30
+       = 0.7450
+P(Hoc deu | qua mon) = 0.637584 (63.76%)
+P(Hoc don | qua mon) = 0.281879 (28.19%)
+P(It hoc | qua mon) = 0.080537 (8.05%)
+Tong hau nghiem = 1.000000
+Nhan xet: nhom hoc deu chiem 50% ban dau nhung chiem
+63.76% trong so nguoi qua mon, do ty le qua cua nhom nay cao.

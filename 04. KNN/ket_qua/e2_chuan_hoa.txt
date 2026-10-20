@@ -1,0 +1,7 @@
+ANH HUONG CUA CHUAN HOA (k=7)
+Luon doan qua mon: 0.6000
+Ba cot, khong chuan hoa       : 0.5333
+Ba cot, co chuan hoa          : 0.8667
+Bo chi_tieu, co chuan hoa     : 0.9000
+Pipeline chi fit StandardScaler tren train, sau do transform test.
+Chuan hoa xu ly thang do; bo cot khong lien quan con giup giam nhieu.

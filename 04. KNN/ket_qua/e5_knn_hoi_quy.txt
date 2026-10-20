@@ -1,0 +1,12 @@
+MAE TREN TAP TEST (TY DONG)
+KNN k=5       : 0.4030
+LinearRegression: 0.2578
+
+Dien tich    KNN    Duong thang
+       60    4.95          5.12
+      100    8.32          8.24
+      150    9.32         12.13
+      250    9.32         19.91
+Nam lang gieng can 250 m2: [117.5, 115.9, 111.7, 111.2, 104.2]
+KNN uniform lay trung binh gia hang xom: ngoai vung du lieu, tap hang xom
+o dau bien khong doi nen du doan phang. Duong thang van keo dai xu huong.

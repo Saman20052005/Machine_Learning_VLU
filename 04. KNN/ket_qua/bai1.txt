@@ -1,0 +1,14 @@
+BAI 1: KNN TU VIET, k=13, EUCLID, KHONG CHUAN HOA NHU DE
+Train: 225; test: 75
+Accuracy tu viet = 0.9200
+Accuracy sklearn = 0.9200
+So du doan khac nhau = 0
+
+Giai thich: tinh khoang cach toi tung mau train, sap tang dan bang argsort,
+lay 13 nhan gan nhat, dem so phieu va chon lop nhieu phieu nhat.
+k=13 le va chi co hai lop nen khong hoa phieu. Ham van xu ly hoa
+bang cach chon nhan nho nhat, giong quy uoc bo phieu cua sklearn.
+Cung du lieu, metric va k nen cung ket qua; accuracy bang nhau thoi chua du,
+vi vay chuong trinh con kiem tra tung nhan du doan.
+Neu hoa khoang cach o vi tri k, ham uu tien thu tu dong train;
+backend sklearn co the chon khac. Bo nay khong gay lech du doan.

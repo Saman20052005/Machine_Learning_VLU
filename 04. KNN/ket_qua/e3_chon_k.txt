@@ -1,0 +1,40 @@
+CHON K BANG KIEM DINH CHEO 5 PHAN TREN TAP TRAIN
+k= 1: CV accuracy=0.7778
+k= 3: CV accuracy=0.8489
+k= 5: CV accuracy=0.8444
+k= 7: CV accuracy=0.8444
+k= 9: CV accuracy=0.8444
+k=11: CV accuracy=0.8533
+k=13: CV accuracy=0.8667 <- tot nhat
+k=15: CV accuracy=0.8622
+k=17: CV accuracy=0.8533
+k=19: CV accuracy=0.8622
+k=21: CV accuracy=0.8622
+k=23: CV accuracy=0.8578
+k=25: CV accuracy=0.8622
+k=27: CV accuracy=0.8622
+k=29: CV accuracy=0.8622
+k=31: CV accuracy=0.8622
+k=33: CV accuracy=0.8667
+k=35: CV accuracy=0.8667
+k=37: CV accuracy=0.8667
+k=39: CV accuracy=0.8622
+k=41: CV accuracy=0.8489
+k=43: CV accuracy=0.8578
+k=45: CV accuracy=0.8533
+k=47: CV accuracy=0.8489
+k=49: CV accuracy=0.8444
+k=51: CV accuracy=0.8533
+
+k tot nhat = 13; CV accuracy = 0.8667
+Accuracy test cua mo hinh da chon = 0.9200
+
+Bang minh hoa hoc vet/cau tha sau khi da khoa k; khong dung de chon k:
+  k    Train     Test
+  1   1.0000   0.8000
+  5   0.8756   0.9067
+ 13   0.8844   0.9200
+ 31   0.8667   0.8933
+101   0.8311   0.8533
+k=1: diem train la lang gieng cua chinh no; train=1 khong bao dam tong quat.
+k rat lon lam tron bien qua muc; chon k bang CV, khong bang bang test.

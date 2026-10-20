@@ -1,0 +1,10 @@
+So tin de hoc: 225; so tin de kiem tra: 75
+TN = 45; FP = 0; FN = 4; TP = 26
+Accuracy  = 0.9467
+Precision = 1.0000
+Recall    = 0.8667
+
+Thu tren ba tin nhan moi:
+[RAC] P(rac) = 1.0000: trúng thưởng khuyến mãi nhanh tay click ngay
+[thuong] P(rac) = 0.0000: họp nhóm báo cáo chiều mai phòng 305
+[thuong] P(rac) = 0.0000: bạn gửi giúp em tài liệu bài tập nhé

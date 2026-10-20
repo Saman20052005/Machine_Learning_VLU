@@ -1,0 +1,10 @@
+BAI 2: KHOANG CACH EUCLID VA MANHATTAN
+CV 5 phan tren train, k le tu 1 den 51; hoa thi lay k nho nhat.
+Metric        k tot    CV acc   Test acc
+euclidean       13    0.8667     0.9200
+manhattan       27    0.8667     0.9067
+
+Manhattan - Euclid tren test: -0.0133 (-1.33 diem %).
+Euclid = sqrt(sum(delta^2)); Manhattan = sum(abs(delta)).
+Doi metric doi thu tu hang xom va co the doi k duoc chon;
+chenh lech tren mot lan chia nho khong chung minh metric nao luon tot hon.

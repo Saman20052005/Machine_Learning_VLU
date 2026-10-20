@@ -1,0 +1,18 @@
+KHOANG CACH EUCLID: d(u,v) = sqrt(sum((u-v)^2))
+Vi du (10,5) va (13,9): 5.0
+Chua chuan hoa: d(A,B) = 102.2
+Chua chuan hoa: d(A,C) = 3000.0
+Do lech chuan (gio_on, diem_giua_ky, chi_tieu): [   7.82    2.09 1691.67]
+Sau chuan hoa: d(A,B) = 3.85
+Sau chuan hoa: d(A,C) = 1.79
+
+Ban moi: on 12 gio, diem giua ky 6.5. Nam lang gieng:
+Dong  67: gio= 10.5; diem= 6.4; d=0.198; qua
+Dong  71: gio= 12.5; diem= 6.1; d=0.202; qua
+Dong  54: gio= 14.0; diem= 6.4; d=0.260; qua
+Dong  69: gio=  9.5; diem= 6.1; d=0.373; rot
+Dong   4: gio= 10.5; diem= 5.8; d=0.386; qua
+Bo phieu: 4 qua, 1 rot
+Du doan: qua mon
+Chi_tieu co thang do lon nen chi phoi khoang cach khi chua chuan hoa.
+Khi danh gia mo hinh, chi tinh thong so chuan hoa tren tap train.

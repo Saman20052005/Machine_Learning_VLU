@@ -1,0 +1,13 @@
+BAI 3: DOI THAM SO LAM TRON
+   Alpha   Accuracy  Precision     Recall
+   0.001     0.9467     1.0000     0.8667
+   0.100     0.9467     1.0000     0.8667
+   1.000     0.9467     1.0000     0.8667
+  10.000     0.9467     1.0000     0.8667
+ 100.000     0.9467     1.0000     0.8667
+
+Nhan xet: alpha qua lon keo P(tu|lop) ve 1/V, lam mat
+suc phan biet cua tu; tien nghiem lop thuong dan chi phoi.
+Trong gioi han alpha tien toi vo cung, mo hinh chon lop pho bien.
+Tren tap nay, cac alpha co the cung ket qua; khong suy ra alpha vo hai.
+Khong chon alpha toi uu bang tap test; can tap validation rieng.

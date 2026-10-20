@@ -1,0 +1,40 @@
+Kich thuoc bang: (300, 2)
+So tin theo nhan (0: thuong, 1: rac):
+la_rac
+0    180
+1    120
+Ty le tin rac: 0.4000
+
+Ba tin nhan dau tien:
+[0] cáo gửi cáo thầy nhóm cáo gửi có cho
+[1] miễn giảm ngay hạn miễn tay nhé thưởng cho nhanh
+[0] cho bạn mai gửi nhóm bài chiều
+
+Kich thuoc bang dem tu: (300, 40)
+So tu trong tu dien: 40
+
+Muoi tu xuat hien nhieu nhat trong tin rac:
+       thuong  rac
+tay         3   48
+ngay        4   47
+nhanh       9   44
+chót        6   43
+giảm        6   42
+lúc        39   42
+quà         8   41
+click       5   40
+phí         6   40
+miễn        4   39
+
+Muoi tu xuat hien nhieu nhat trong tin thuong:
+       thuong  rac
+thầy       74    7
+bài        73    4
+cáo        72    8
+chiều      68    8
+ạ          65    7
+tài        64   11
+tập        63    6
+gửi        61   10
+lớp        60    2
+nhóm       58    7

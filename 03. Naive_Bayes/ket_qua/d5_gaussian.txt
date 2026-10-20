@@ -1,0 +1,16 @@
+GaussianNB: accuracy = 0.9000
+LogisticRegression: accuracy = 0.9000
+
+Thong so hoc duoc (gio_on, diem_giua_ky):
+Lop 0: trung binh = [8.1757 3.9865]
+       do lech chuan = [5.2943 1.9191]
+Lop 1: trung binh = [20.0283  6.6962]
+       do lech chuan = [5.8102 1.496 ]
+Tien nghiem: [0.4111 0.5889]
+
+Du doan bon sinh vien moi:
+ gio_on  diem_giua_ky  P(qua_mon)
+      5        4.0000      0.0137
+     13        6.0000      0.6550
+     20        7.0000      0.9855
+     28        9.0000      0.9999
