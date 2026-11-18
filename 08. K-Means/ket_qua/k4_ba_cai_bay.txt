@@ -1,0 +1,13 @@
+Bay 1: khong chuan hoa, tam cum (thu nhap trieu, chi tieu):
+  (  6.1,  52.5)
+  (  9.6,  41.9)
+  ( 17.4,  49.8)
+  ( 27.8,  52.9)
+  ( 31.9,  52.4)
+
+Bay 2: inertia cua 20 lan khoi tao ngau nhien:
+  [23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0, 23.0]
+  [72.4, 73.6, 73.7, 73.7, 84.0, 84.2, 84.2, 116.6, 117.4, 118.2]
+  Voi n_init=10: inertia 23.0
+
+Bay 3: hai vang trang, ty le khop nhan that 0.7500

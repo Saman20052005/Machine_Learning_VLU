@@ -1,0 +1,12 @@
+Hoi quy logistic:
+  Tu viet     : acc=0.9467, P=0.8500, R=0.5667, F1=0.6800
+  Scikit-learn: acc=0.9467, P=0.8500, R=0.5667, F1=0.6800
+Mo hinh luoi:
+  Tu viet     : acc=0.9000, P=0.0000, R=0.0000, F1=0.0000
+  Scikit-learn: acc=0.9000, P=0.0000, R=0.0000, F1=0.0000
+
+Giai thich:
+- Voi mo hinh luoi, mo hinh khong bao ai bo hoc (TP = 0, FP = 0), nen mau so
+  cua precision (TP + FP) bang 0 va khong tinh duoc theo phep chia thong thuong.
+- Ham danh_gia kiem tra mau so > 0 truoc khi chia; neu bang 0 thi tra ve 0.0
+  (tuong duong zero_division=0 trong scikit-learn) de tranh loi chia cho 0.

@@ -1,0 +1,12 @@
+1. Du lieu goc (24 diem):
+  w1 = -0.8314, w2 = -0.3549, b = 4.8204, so vecto HT = 3
+2. Them diem lop 1 tai (-1, -1):
+  w1 = -0.8314, w2 = -0.3549, b = 4.8204, so vecto HT = 3
+3. Thay bang diem lop 1 tai (4.5, 4):
+  w1 = -2.6030, w2 = -0.8068, b = 15.9409, so vecto HT = 2
+
+Giai thich:
+- Khi them (-1, -1) o xa phia sau cum lop 1, diem nay nam ngoai le va khong vi pham
+  mep le nao, nen khong tro thanh vecto ho tro; duong ranh gioi giu nguyen.
+- Khi them (4.5, 4) nam sat ranh gioi (lot vao vung le cu), diem nay tro thanh
+  vecto ho tro moi va day duong ranh gioi dich chuyen theo.

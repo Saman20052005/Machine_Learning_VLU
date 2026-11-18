@@ -1,0 +1,8 @@
+Da luu bieu do: bieu_do/roc.png
+AUC Logistic    : 0.9449
+AUC Rung 200 cay: 0.9249
+
+Nhan xet:
+- Duong Logistic om sat goc tren ben trai hon (AUC cao hon: 0.9449 so voi 0.9249).
+- O doan dau (FPR gan 0) va vung giua, hai duong co giao cat nhe,
+  nhung nhin chung duong Logistic nam phia tren duong cua Rung.

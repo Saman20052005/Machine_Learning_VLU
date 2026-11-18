@@ -1,0 +1,17 @@
+Boc 450 lan, co 286 khach khac nhau (64%)
+
+Rung 200 cay
+  tap hoc      : 1.0000
+  tap kiem tra : 0.9000
+
+So cay   accuracy tap kiem tra
+     1   0.7933
+    10   0.8467
+    50   0.8733
+   200   0.9000
+   400   0.9000
+
+Mo hinh        tap hoc   tap kiem tra
+  Cay moc tu do  1.0000    0.7667
+  Cay sau 5      0.8978    0.8533
+  Rung 200 cay   1.0000    0.9000

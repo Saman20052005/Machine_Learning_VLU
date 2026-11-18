@@ -1,0 +1,11 @@
+init = 'random':
+  So lan dat inertia 23.0: 30 / 50 (60%)
+  Inertia nho nhat / lon nhat: 23.0 / 204.0
+
+init = 'k-means++':
+  So lan dat inertia 23.0: 50 / 50 (100%)
+  Inertia nho nhat / lon nhat: 23.0 / 23.0
+
+Nhan xet:
+- k-means++ chon cac tam ban dau nam xa nhau, nen ti le dat nghiem tot (inertia 23.0)
+  cao hon han so voi random va it roi vao cuc tieu dia phuong xau. Do do k-means++ dang tin hon.

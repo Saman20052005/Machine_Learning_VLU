@@ -1,0 +1,16 @@
+So khach tap hoc: 450
+Gini nut goc    : 0.4998
+Cau hoi tot nhat: thu_nhap <= 15.05
+Gini sau chia   : 0.3777, Gini giam: 0.1221
+
+Doi chieu voi scikit-learn (max_depth=1):
+|--- thu_nhap <= 15.05
+|   |--- weights: [182.00, 67.00] class: 0
+|--- thu_nhap >  15.05
+|   |--- weights: [47.00, 154.00] class: 1
+
+Giai thich:
+- Ham duyet tat ca cac cot va moi nguong nam giua hai gia tri da sap xep lien ke.
+- Voi moi cap (cot, nguong), ham tinh Gini trung binh co trong so cua hai nhanh
+  va chon phep chia lam Gini giam nhieu nhat (Gini sau chia nho nhat).
+- Ket qua thu_nhap <= 15.05 trung khop hoan toan voi nut goc cua scikit-learn.

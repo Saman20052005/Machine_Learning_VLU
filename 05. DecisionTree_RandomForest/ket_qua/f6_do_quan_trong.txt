@@ -1,0 +1,13 @@
+Do quan trong, bon cot that
+thu_nhap              0.479
+ty_le_no              0.339
+so_nguoi_phu_thuoc    0.093
+co_viec_on_dinh       0.088
+Tong: 1.0
+
+Do quan trong, them mot cot ngau nhien
+thu_nhap              0.427
+ty_le_no              0.270
+so_ngau_nhien         0.150
+co_viec_on_dinh       0.077
+so_nguoi_phu_thuoc    0.076

@@ -1,0 +1,10 @@
+Tap kiem tra, doi nguong
+nguong  so bao   TP   FP   FN  precision  recall     F1
+  0.5       20   17    3   13     0.8500  0.5667  0.6800
+  0.4       21   18    3   12     0.8571  0.6000  0.7059
+  0.3       29   21    8    9     0.7241  0.7000  0.7119
+  0.2       42   24   18    6     0.5714  0.8000  0.6667
+  0.1       61   26   35    4     0.4262  0.8667  0.5714
+
+Nguong cho F1 cao nhat tren tap hoc: 0.25 (F1 kiem dinh cheo 0.6473)
+Tap kiem tra voi nguong 0.25: precision 0.6571, recall 0.7667, F1 0.7077

@@ -1,0 +1,6 @@
+Anh 427 x 640, co 273280 diem anh, 96615 mau
+
+   K   so bit moi diem   nho hon   sai lech trung binh
+   4         2          12.0 lan      17.41 muc sang
+  16         4           6.0 lan       7.97 muc sang
+  64         6           4.0 lan       4.54 muc sang

@@ -1,0 +1,16 @@
+Kich thuoc X: (1797, 64)
+Do sang nho nhat va lon nhat: 0.0 16.0
+So anh moi chu so: [178 182 177 183 181 182 181 179 174 180]
+
+SVM kernel RBF: accuracy 0.9911
+So vecto ho tro: 626 tren 1347 anh
+So anh doan sai: 4 tren 450
+  anh   6: that la 9, doan la 3
+  anh  18: that la 8, doan la 1
+  anh 161: that la 4, doan la 8
+  anh 428: that la 7, doan la 9
+
+Cac mo hinh khac, accuracy tren tap kiem tra
+  SVM co chuan hoa       0.9778
+  KNN, k = 5             0.9867
+  Logistic co chuan hoa  0.9711

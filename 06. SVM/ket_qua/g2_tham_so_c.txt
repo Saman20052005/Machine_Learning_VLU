@@ -1,0 +1,12 @@
+Tap hoc co 90 ban
+     C   so vecto HT   do rong le   tap hoc   tap kiem tra
+    0.01       74         3.84       0.8556      0.8667
+     0.1       44         1.70       0.8889      0.9000
+       1       31         1.29       0.8778      0.9000
+      10       28         1.06       0.9000      0.9000
+     100       27         1.05       0.9000      0.9000
+
+Ba cot, kernel RBF mac dinh
+  Doan bua ca lop qua : 0.6000
+  Khong chuan hoa     : 0.6000
+  Co chuan hoa        : 0.9000

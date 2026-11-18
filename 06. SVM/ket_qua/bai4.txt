@@ -1,0 +1,14 @@
+Diem kiem dinh cheo luoi min (hang C, cot gamma):
+gamma     0.3     1.0     3.0
+C                            
+3      0.8533  0.8711  0.8667
+10     0.8489  0.8711  0.8667
+30     0.8622  0.8756  0.8533
+
+Cap tot nhat: {'C': 30, 'gamma': 1}
+Diem CV tot nhat : 0.8756 (luoi thua muc 5: 0.8711)
+Accuracy tap test: 0.9200 (luoi thua muc 5: 0.9200)
+
+Nhan xet:
+- Do luoi min giup tim duoc diem toi uu sat hon trong vung tot, cai thien diem CV;
+  tuy nhien tren tap kiem tra nho (75 mau), accuracy co the giu nguyen hoac thay doi it.

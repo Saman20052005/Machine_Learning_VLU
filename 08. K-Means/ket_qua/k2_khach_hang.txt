@@ -1,0 +1,23 @@
+Kich thuoc bang: (210, 3)
+        tuoi  thu_nhap  diem_chi_tieu
+count  210.0     210.0          210.0
+mean    37.6      18.5           49.9
+std     10.3       9.8           26.8
+min     18.0       3.0            7.0
+25%     30.0       8.8           22.0
+50%     39.0      17.4           49.0
+75%     46.0      28.6           77.0
+max     62.0      35.5           99.0
+
+Tam cum, don vi goc:
+   thu_nhap  diem_chi_tieu  so_khach  tuoi_tb
+0       7.5           80.2        35     24.9
+1      30.1           20.0        35     42.9
+2      17.4           49.3        60     40.4
+3       8.0           18.9        40     44.9
+4      30.2           81.5        40     32.6
+
+Inertia: 23.02
+
+Khach moi 1: thu nhap 29.0, chi tieu 85 -> cum 4
+Khach moi 2: thu nhap 9.0, chi tieu 75 -> cum 0

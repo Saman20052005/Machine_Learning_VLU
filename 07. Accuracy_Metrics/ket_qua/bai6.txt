@@ -1,0 +1,11 @@
+Thuoc do   Ban dau   Sau khi sai +5 ty   Chenh lech
+MAE         0.2578              0.6745      +0.4167
+RMSE        0.3730              1.5505      +1.1775
+R2          0.9622              0.3475      -0.6148
+
+Giai thich:
+- RMSE thay doi nhieu nhat (+1.1775), R2 giam manh (-0.6148), con MAE chi tang +0.4167.
+- MAE lay trung binh tri tuyet doi sai so, nen 1 can sai them 5 ty chia cho 12 can
+  chi lam MAE tang toi da ~5/12 = 0.4167.
+- RMSE binh phuong sai so truoc khi lay trung binh roi khai can (5^2 = 25),
+  nen mot sai so lon bi phong dai rat manh, khien RMSE va R2 thay doi nhieu.

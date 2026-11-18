@@ -1,0 +1,6 @@
+Cap tham so tot nhat: {'mlpclassifier__alpha': 1, 'mlpclassifier__hidden_layer_sizes': (50,)}
+Diem CV tot nhat    : 0.9785
+Accuracy test (MLP) : 0.9822
+Accuracy test (SVM) : 0.9911
+
+Nhan xet: MLP sau do luoi van chua vuot duoc SVM (0.9911) tren bo du lieu nho nay.

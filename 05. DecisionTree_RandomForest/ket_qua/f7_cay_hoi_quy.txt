@@ -1,0 +1,34 @@
+Cay hoi quy sau 3 co 8 la
+|--- dien_tich <= 73.9
+|   |--- dien_tich <= 64.7
+|   |   |--- dien_tich <= 50.5
+|   |   |   |--- value: [4.2]
+|   |   |--- dien_tich >  50.5
+|   |   |   |--- value: [4.9]
+|   |--- dien_tich >  64.7
+|   |   |--- dien_tich <= 68.5
+|   |   |   |--- value: [5.3]
+|   |   |--- dien_tich >  68.5
+|   |   |   |--- value: [5.9]
+|--- dien_tich >  73.9
+|   |--- dien_tich <= 93.8
+|   |   |--- dien_tich <= 82.5
+|   |   |   |--- value: [6.8]
+|   |   |--- dien_tich >  82.5
+|   |   |   |--- value: [7.4]
+|   |--- dien_tich >  93.8
+|   |   |--- dien_tich <= 107.7
+|   |   |   |--- value: [8.3]
+|   |   |--- dien_tich >  107.7
+|   |   |   |--- value: [9.4]
+
+MAE tren tap kiem tra (ty dong)
+  Cay sau 3   : 0.5039
+  Duong thang : 0.2578
+
+Du doan cho bon can moi (ty dong)
+  dien tich     cay   duong thang
+      60 m2    4.92          5.12
+     100 m2    8.32          8.24
+     150 m2    9.40         12.13
+     250 m2    9.40         19.91

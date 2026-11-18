@@ -1,0 +1,14 @@
+min_samples_leaf   tap hoc   kiem dinh cheo
+               1   1.0000       0.7733
+               2   0.9467       0.7822
+               5   0.8956       0.8067
+              10   0.8600       0.8089
+              20   0.8422       0.8089
+              40   0.7822       0.7133
+
+min_samples_leaf tot nhat = 10, do sau = 8, so la = 30
+Accuracy test (min_samples_leaf=10): 0.8467
+Accuracy test (max_depth=5)        : 0.8533
+
+Nhan xet:
+- Cat tia bang max_depth=5 cho accuracy cao hon (0.8533 > 0.8467).

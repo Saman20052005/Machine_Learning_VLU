@@ -1,0 +1,8 @@
+Bac   C tot nhat   CV accuracy   Test accuracy
+ 2           1       0.5422        0.5067
+ 3           1       0.8178        0.8267
+ 4         100       0.5156        0.4800
+
+Bac tot nhat theo CV: bac 3 (C=1), CV=0.8178, test=0.8267
+So voi kernel RBF o muc 5 (CV=0.8711, test=0.9200):
+- Kernel da thuc khong vuot duoc kernel RBF tren bo hai vang trang.

@@ -1,0 +1,314 @@
+========================================================================
+code/f1_gini.py
+========================================================================
+Gini cua nut goc: 0.4800
+
+Cau hoi 'thu_nhap <= nguong ?'
+  nguong   Gini sau chia   Gini giam
+     7.0          0.4000      0.0800
+     8.5          0.4750      0.0050
+    10.0          0.4190      0.0610
+    12.0          0.3167      0.1633
+    14.0          0.4000      0.0800
+    16.5          0.4500      0.0300
+    19.0          0.3429      0.1371
+    22.5          0.4000      0.0800
+    27.5          0.4444      0.0356
+
+Cau hoi 'co viec on dinh ?'
+  Gini sau chia 0.4190, Gini giam 0.0610
+
+Cay mot tang do scikit-learn chon:
+|--- thu_nhap <= 12.00
+|   |--- weights: [3.00, 1.00] class: 0
+|--- thu_nhap >  12.00
+|   |--- weights: [1.00, 5.00] class: 1
+
+
+========================================================================
+code/f2_cay_nam_la.py
+========================================================================
+Kich thuoc bang: (600, 5)
+   thu_nhap  ty_le_no  co_viec_on_dinh  so_nguoi_phu_thuoc  tra_dung_han
+0       9.4      0.18                0                   4             0
+1      15.8      0.70                0                   2             1
+2       6.1      0.79                0                   0             0
+3      19.4      1.13                1                   4             0
+4      24.8      0.33                1                   0             1
+
+Ty le khach tra dung han: 0.49
+
+Do sau 3, so la 5
+|--- thu_nhap <= 15.050
+|   |--- ty_le_no <= 0.615
+|   |   |--- co_viec_on_dinh <= 0.500
+|   |   |   |--- weights: [33.000, 6.000] class: 0
+|   |   |--- co_viec_on_dinh >  0.500
+|   |   |   |--- weights: [35.000, 47.000] class: 1
+|   |--- ty_le_no >  0.615
+|   |   |--- weights: [114.000, 14.000] class: 0
+|--- thu_nhap >  15.050
+|   |--- ty_le_no <= 1.020
+|   |   |--- weights: [27.000, 145.000] class: 1
+|   |--- ty_le_no >  1.020
+|   |   |--- weights: [20.000, 9.000] class: 0
+
+Accuracy tap hoc      : 0.7978
+Accuracy tap kiem tra : 0.7467
+
+Khach 1: dung han, xac suat dung han 0.84
+Khach 2: tre han, xac suat dung han 0.15
+
+========================================================================
+code/f3_do_sau.py
+========================================================================
+Cay moc tu do
+  do sau 13, so la 92
+  tap hoc 1.0000, tap kiem tra 0.7667
+
+Do sau   tap hoc   kiem dinh cheo
+   1      0.7467       0.7244
+   2      0.7711       0.7378
+   3      0.8000       0.7511
+   4      0.8644       0.8089
+   5      0.8978       0.8333
+   6      0.9133       0.8156
+   7      0.9400       0.8067
+   8      0.9600       0.7733
+   9      0.9800       0.7800
+  10      0.9911       0.7822
+  11      0.9933       0.7756
+  12      0.9978       0.7778
+  13      1.0000       0.7733
+  14      1.0000       0.7733
+  15      1.0000       0.7733
+
+Do sau tot nhat = 5, cay co 27 la
+Accuracy tren tap kiem tra = 0.8533
+
+========================================================================
+code/f4_khong_chuan_hoa.py
+========================================================================
+Accuracy tren tap kiem tra
+  du lieu goc         : 0.8533
+  da chuan hoa        : 0.8533
+  thu nhap nghin dong : 0.8533
+
+So khach bi doan khac cay goc
+  da chuan hoa        : 0
+  thu nhap nghin dong : 0
+
+Nguong cua cau hoi goc
+  du lieu goc         : 15.05
+  thu nhap nghin dong : 15050.00
+
+========================================================================
+code/f5_rung.py
+========================================================================
+Boc 450 lan, co 286 khach khac nhau (64%)
+
+Rung 200 cay
+  tap hoc      : 1.0000
+  tap kiem tra : 0.9000
+
+So cay   accuracy tap kiem tra
+     1   0.7933
+    10   0.8467
+    50   0.8733
+   200   0.9000
+   400   0.9000
+
+Mo hinh        tap hoc   tap kiem tra
+  Cay moc tu do  1.0000    0.7667
+  Cay sau 5      0.8978    0.8533
+  Rung 200 cay   1.0000    0.9000
+
+========================================================================
+code/f6_do_quan_trong.py
+========================================================================
+Do quan trong, bon cot that
+thu_nhap              0.479
+ty_le_no              0.339
+so_nguoi_phu_thuoc    0.093
+co_viec_on_dinh       0.088
+Tong: 1.0
+
+Do quan trong, them mot cot ngau nhien
+thu_nhap              0.427
+ty_le_no              0.270
+so_ngau_nhien         0.150
+co_viec_on_dinh       0.077
+so_nguoi_phu_thuoc    0.076
+
+========================================================================
+code/f7_cay_hoi_quy.py
+========================================================================
+Cay hoi quy sau 3 co 8 la
+|--- dien_tich <= 73.9
+|   |--- dien_tich <= 64.7
+|   |   |--- dien_tich <= 50.5
+|   |   |   |--- value: [4.2]
+|   |   |--- dien_tich >  50.5
+|   |   |   |--- value: [4.9]
+|   |--- dien_tich >  64.7
+|   |   |--- dien_tich <= 68.5
+|   |   |   |--- value: [5.3]
+|   |   |--- dien_tich >  68.5
+|   |   |   |--- value: [5.9]
+|--- dien_tich >  73.9
+|   |--- dien_tich <= 93.8
+|   |   |--- dien_tich <= 82.5
+|   |   |   |--- value: [6.8]
+|   |   |--- dien_tich >  82.5
+|   |   |   |--- value: [7.4]
+|   |--- dien_tich >  93.8
+|   |   |--- dien_tich <= 107.7
+|   |   |   |--- value: [8.3]
+|   |   |--- dien_tich >  107.7
+|   |   |   |--- value: [9.4]
+
+MAE tren tap kiem tra (ty dong)
+  Cay sau 3   : 0.5039
+  Duong thang : 0.2578
+
+Du doan cho bon can moi (ty dong)
+  dien tich     cay   duong thang
+      60 m2    4.92          5.12
+     100 m2    8.32          8.24
+     150 m2    9.40         12.13
+     250 m2    9.40         19.91
+
+========================================================================
+baitap05/bai1.py
+========================================================================
+Da luu hinh: bieu_do/cay_nam_la.png
+Da luu hinh: bieu_do/cay_sau_2.png
+
+Cay sau 2 dang chu:
+|--- thu_nhap <= 15.050
+|   |--- ty_le_no <= 0.615
+|   |   |--- weights: [68.000, 53.000] class: 0
+|   |--- ty_le_no >  0.615
+|   |   |--- weights: [114.000, 14.000] class: 0
+|--- thu_nhap >  15.050
+|   |--- ty_le_no <= 1.020
+|   |   |--- weights: [27.000, 145.000] class: 1
+|   |--- ty_le_no >  1.020
+|   |   |--- weights: [20.000, 9.000] class: 0
+
+Nhan xet:
+- Hai la ben trai cua cay sau 2 deu co cung ket luan la class 0 (tre han).
+- Cay van chia nut do vi phep chia lam giam chi so Gini trung binh co trong so:
+  mot nhanh tro nen rat thuan khiet (114 tre han, 14 dung han, gini=0.195),
+  con nhanh kia gan 50-50 (68 tre han, 53 dung han). Cay chi nhin muc giam Gini,
+  khong quan tam hai la con co cung nhan du doan hay khong.
+
+========================================================================
+baitap05/bai2.py
+========================================================================
+So khach tap hoc: 450
+Gini nut goc    : 0.4998
+Cau hoi tot nhat: thu_nhap <= 15.05
+Gini sau chia   : 0.3777, Gini giam: 0.1221
+
+Doi chieu voi scikit-learn (max_depth=1):
+|--- thu_nhap <= 15.05
+|   |--- weights: [182.00, 67.00] class: 0
+|--- thu_nhap >  15.05
+|   |--- weights: [47.00, 154.00] class: 1
+
+Giai thich:
+- Ham duyet tat ca cac cot va moi nguong nam giua hai gia tri da sap xep lien ke.
+- Voi moi cap (cot, nguong), ham tinh Gini trung binh co trong so cua hai nhanh
+  va chon phep chia lam Gini giam nhieu nhat (Gini sau chia nho nhat).
+- Ket qua thu_nhap <= 15.05 trung khop hoan toan voi nut goc cua scikit-learn.
+
+========================================================================
+baitap05/bai3.py
+========================================================================
+Do sau   CV gini   CV entropy
+   1     0.7244     0.7244
+   2     0.7378     0.7133
+   3     0.7511     0.7489
+   4     0.8089     0.8111
+   5     0.8333     0.8222
+   6     0.8156     0.8222
+   7     0.8067     0.8089
+   8     0.7733     0.7933
+   9     0.7800     0.7844
+  10     0.7822     0.7978
+  11     0.7756     0.7911
+  12     0.7778     0.7822
+  13     0.7733     0.7822
+  14     0.7733     0.7822
+  15     0.7733     0.7867
+
+Gini   : do sau tot nhat = 5, so la = 27, CV = 0.8333, test = 0.8533
+Entropy: do sau tot nhat = 5, so la = 23, CV = 0.8222, test = 0.8467
+
+Nhan xet:
+- Doi thuoc do tu gini sang entropy khong lam ket qua khac di nhieu;
+  ca hai thuong cho do sau toi uu va accuracy tren tap kiem tra rat gan nhau.
+
+========================================================================
+baitap05/bai4.py
+========================================================================
+min_samples_leaf   tap hoc   kiem dinh cheo
+               1   1.0000       0.7733
+               2   0.9467       0.7822
+               5   0.8956       0.8067
+              10   0.8600       0.8089
+              20   0.8422       0.8089
+              40   0.7822       0.7133
+
+min_samples_leaf tot nhat = 10, do sau = 8, so la = 30
+Accuracy test (min_samples_leaf=10): 0.8467
+Accuracy test (max_depth=5)        : 0.8533
+
+Nhan xet:
+- Cat tia bang max_depth=5 cho accuracy cao hon (0.8533 > 0.8467).
+
+========================================================================
+baitap05/bai5.py
+========================================================================
+1. Do quan trong theo feature_importances_ (Gini):
+thu_nhap              0.4269
+ty_le_no              0.2696
+so_ngau_nhien         0.1499
+co_viec_on_dinh       0.0773
+so_nguoi_phu_thuoc    0.0764
+
+2. Do quan trong theo permutation_importance (tren tap kiem tra):
+thu_nhap              0.3073
+ty_le_no              0.1993
+co_viec_on_dinh       0.1117
+so_nguoi_phu_thuoc    0.0497
+so_ngau_nhien         0.0017
+
+Thu hang cot 'so_ngau_nhien': feature_importances_ = 3/5, permutation_importance = 5/5
+
+Giai thich:
+- Theo feature_importances_, cot ngau nhien co nhieu gia tri khac nhau (450 muc)
+  nen cay luon tim duoc nguong chia nho tap hoc va cong diem cho no (xep thu 3).
+- Theo permutation_importance tren tap kiem tra, xao tron mot cot vo dung
+  khong lam accuracy giam (hoac tham chi tang nhe, gia tri gan 0 hoac am),
+  nen no roi xuong vi tri thap nhat, phan anh dung muc do huu ich thuc su.
+
+========================================================================
+baitap05/bai6.py
+========================================================================
+MAE tren tap kiem tra (ty dong):
+  Rung 200 cay : 0.4559
+  Cay sau 3    : 0.5039
+  Duong thang  : 0.2578
+
+Du doan gia can 250 m2 (ty dong):
+  Rung 200 cay : 9.20
+  Cay sau 3    : 9.40
+  Duong thang  : 19.91
+
+Giai thich:
+- Rung KHONG ngoai suy duoc vuot ra ngoai khoang gia tri da thay trong tap hoc.
+- Moi cay trong rung du doan bang trung binh gia cua cac mau tap hoc roi vao la do.
+- Can 250 m2 lon hon moi can trong tap hoc nen o moi cay no deu roi vao la ngoai cung
+  ben phai; trung binh cua 200 la do van bi chan boi muc gia cao nhat trong tap hoc.

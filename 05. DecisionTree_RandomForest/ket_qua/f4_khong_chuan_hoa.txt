@@ -1,0 +1,12 @@
+Accuracy tren tap kiem tra
+  du lieu goc         : 0.8533
+  da chuan hoa        : 0.8533
+  thu nhap nghin dong : 0.8533
+
+So khach bi doan khac cay goc
+  da chuan hoa        : 0
+  thu nhap nghin dong : 0
+
+Nguong cua cau hoi goc
+  du lieu goc         : 15.05
+  thu nhap nghin dong : 15050.00

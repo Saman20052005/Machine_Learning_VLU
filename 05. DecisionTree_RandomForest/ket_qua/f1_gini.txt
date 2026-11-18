@@ -1,0 +1,23 @@
+Gini cua nut goc: 0.4800
+
+Cau hoi 'thu_nhap <= nguong ?'
+  nguong   Gini sau chia   Gini giam
+     7.0          0.4000      0.0800
+     8.5          0.4750      0.0050
+    10.0          0.4190      0.0610
+    12.0          0.3167      0.1633
+    14.0          0.4000      0.0800
+    16.5          0.4500      0.0300
+    19.0          0.3429      0.1371
+    22.5          0.4000      0.0800
+    27.5          0.4444      0.0356
+
+Cau hoi 'co viec on dinh ?'
+  Gini sau chia 0.4190, Gini giam 0.0610
+
+Cay mot tang do scikit-learn chon:
+|--- thu_nhap <= 12.00
+|   |--- weights: [3.00, 1.00] class: 0
+|--- thu_nhap >  12.00
+|   |--- weights: [1.00, 5.00] class: 1
+

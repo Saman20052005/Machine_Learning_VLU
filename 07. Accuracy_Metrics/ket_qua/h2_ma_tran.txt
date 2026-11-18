@@ -1,0 +1,14 @@
+Tu dem:
+  TP = 17  (doan bo hoc, dung la bo hoc)
+  FP = 3   (bao dong nham)
+  FN = 13  (bo sot)
+  TN = 267 (doan khong bo, dung la khong bo)
+  Tong = 300
+
+confusion_matrix cua scikit-learn:
+[[267   3]
+ [ 13  17]]
+Thu tu khi trai ra: TN, FP, FN, TP = [267   3  13  17]
+
+Accuracy tinh tu bon o: (17 + 267) / 300 = 0.9467
+So ban bi bao co nguy co: TP + FP = 20

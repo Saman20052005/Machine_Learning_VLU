@@ -1,0 +1,7 @@
+Hoi quy logistic: 0.4500
+
+So no-ron an   so tham so   tap hoc   tap kiem tra
+           1            5    0.6533         0.6900
+           2            9    0.6533         0.6900
+           4           17    0.9033         0.9300
+           8           33    0.9167         0.9100

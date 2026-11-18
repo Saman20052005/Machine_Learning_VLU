@@ -1,0 +1,11 @@
+Mot nguong tren truc x, tot nhat dung 0.7143
+Them cot x^2, SVM tuyen tinh dung 1.0000
+
+Hai vang trang, accuracy tren tap kiem tra
+  SVM kernel tuyen tinh      0.8667
+  SVM kernel da thuc bac 3   0.8667
+  SVM kernel RBF             0.9200
+  Hoi quy logistic           0.8533
+  KNN, k = 13                0.9200
+
+So vecto ho tro cua kernel RBF: 89 tren 225 diem hoc

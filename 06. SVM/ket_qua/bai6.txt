@@ -1,0 +1,10 @@
+n_samples   SVC (s)   LinearSVC (s)
+     2000    0.3734          0.0293
+     5000    1.5203          0.0313
+    10000   21.0648          0.0958
+    20000   66.9932          0.2076
+
+Nhan xet:
+- Khi so mau tang gap doi (tu 5000 len 10000, hoac 10000 len 20000),
+  thoi gian .fit cua SVC (kernel RBF) tang nhanh hon tuyen tinh (khoang 3-4 lan),
+  trong khi LinearSVC tang cham hon nhieu (xap xi tuyen tinh, khoang 2 lan) va nhanh hon rat nhieu.

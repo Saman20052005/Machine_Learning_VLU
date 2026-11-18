@@ -1,0 +1,207 @@
+========================================================================
+code/h1_do_bua.py
+========================================================================
+Kich thuoc bang: (1200, 5)
+   diem_tb  so_buoi_vang  tin_chi_no  gio_lam_them  bo_hoc
+0      8.0             3           0             0       0
+1      8.9             5           1             7       0
+2      3.3             3           1             4       0
+3      6.4             3           0             7       0
+4      7.9             3           5            23       0
+
+So sinh vien moi lop:
+bo_hoc
+0    1081
+1     119
+Ty le bo hoc: 0.099
+
+Tap kiem tra: 300 ban, 30 ban bo hoc
+
+Mo hinh luoi      accuracy 0.9000, tim ra 0 tren 30 ban bo hoc
+Hoi quy logistic  accuracy 0.9467, tim ra 17 tren 30 ban bo hoc
+
+========================================================================
+code/h2_ma_tran.py
+========================================================================
+Tu dem:
+  TP = 17  (doan bo hoc, dung la bo hoc)
+  FP = 3   (bao dong nham)
+  FN = 13  (bo sot)
+  TN = 267 (doan khong bo, dung la khong bo)
+  Tong = 300
+
+confusion_matrix cua scikit-learn:
+[[267   3]
+ [ 13  17]]
+Thu tu khi trai ra: TN, FP, FN, TP = [267   3  13  17]
+
+Accuracy tinh tu bon o: (17 + 267) / 300 = 0.9467
+So ban bi bao co nguy co: TP + FP = 20
+
+========================================================================
+code/h3_precision_recall.py
+========================================================================
+Tinh tay tu bon o:
+  Precision = 17 / (17 + 3) = 0.8500
+  Recall    = 17 / (17 + 13) = 0.5667
+  F1        = 2 x 0.8500 x 0.5667 / (0.8500 + 0.5667) = 0.6800
+
+Tinh bang scikit-learn:
+  Precision = 0.8500
+  Recall    = 0.5667
+  F1        = 0.6800
+
+Bao cao day du:
+              precision    recall  f1-score   support
+
+    khong bo     0.9536    0.9889    0.9709       270
+      bo hoc     0.8500    0.5667    0.6800        30
+
+    accuracy                         0.9467       300
+   macro avg     0.9018    0.7778    0.8255       300
+weighted avg     0.9432    0.9467    0.9418       300
+
+
+========================================================================
+code/h4_nguong.py
+========================================================================
+Tap kiem tra, doi nguong
+nguong  so bao   TP   FP   FN  precision  recall     F1
+  0.5       20   17    3   13     0.8500  0.5667  0.6800
+  0.4       21   18    3   12     0.8571  0.6000  0.7059
+  0.3       29   21    8    9     0.7241  0.7000  0.7119
+  0.2       42   24   18    6     0.5714  0.8000  0.6667
+  0.1       61   26   35    4     0.4262  0.8667  0.5714
+
+Nguong cho F1 cao nhat tren tap hoc: 0.25 (F1 kiem dinh cheo 0.6473)
+Tap kiem tra voi nguong 0.25: precision 0.6571, recall 0.7667, F1 0.7077
+
+========================================================================
+code/h5_roc_auc.py
+========================================================================
+Duong ROC co 28 diem. Vai diem dau:
+  bao dong nham   recall
+         0.0000   0.0000
+         0.0000   0.0333
+         0.0000   0.4000
+         0.0074   0.4000
+         0.0074   0.5333
+         0.0111   0.5333
+AUC cua logistic = 0.9449
+
+Mo hinh          AUC     recall   F1    (nguong 0.5)
+  Logistic       0.9449  0.5667  0.6800
+  Naive Bayes    0.9336  0.3667  0.5116
+  KNN, k = 15    0.9274  0.2333  0.3684
+  Cay sau 4      0.8803  0.4667  0.5957
+  Rung 200 cay   0.9249  0.5667  0.6538
+  SVM RBF        0.8996  0.5000  0.6250
+
+========================================================================
+code/h6_can_bang.py
+========================================================================
+Khong stratify, so ban bo hoc trong tap kiem tra:
+  [22, 26, 35, 29, 32, 27, 28, 20, 27, 23]
+
+Kiem dinh cheo 5 phan tren tap hoc:
+  accuracy   0.9289
+  precision  0.7044
+  recall     0.4810
+  f1         0.5652
+
+Tap kiem tra   precision  recall    F1
+  Binh thuong  0.8500    0.5667  0.6800
+  Can bang lop 0.4483    0.8667  0.5909
+
+========================================================================
+baitap07/bai1.py
+========================================================================
+Hoi quy logistic:
+  Tu viet     : acc=0.9467, P=0.8500, R=0.5667, F1=0.6800
+  Scikit-learn: acc=0.9467, P=0.8500, R=0.5667, F1=0.6800
+Mo hinh luoi:
+  Tu viet     : acc=0.9000, P=0.0000, R=0.0000, F1=0.0000
+  Scikit-learn: acc=0.9000, P=0.0000, R=0.0000, F1=0.0000
+
+Giai thich:
+- Voi mo hinh luoi, mo hinh khong bao ai bo hoc (TP = 0, FP = 0), nen mau so
+  cua precision (TP + FP) bang 0 va khong tinh duoc theo phep chia thong thuong.
+- Ham danh_gia kiem tra mau so > 0 truoc khi chia; neu bang 0 thi tra ve 0.0
+  (tuong duong zero_division=0 trong scikit-learn) de tranh loi chia cho 0.
+
+========================================================================
+baitap07/bai2.py
+========================================================================
+              precision    recall  f1-score   support
+
+           0     1.0000    1.0000    1.0000        45
+           1     0.9787    1.0000    0.9892        46
+           2     1.0000    1.0000    1.0000        44
+           3     0.9787    1.0000    0.9892        46
+           4     1.0000    0.9778    0.9888        45
+           5     1.0000    1.0000    1.0000        46
+           6     1.0000    1.0000    1.0000        45
+           7     1.0000    0.9778    0.9888        45
+           8     0.9767    0.9767    0.9767        43
+           9     0.9778    0.9778    0.9778        45
+
+    accuracy                         0.9911       450
+   macro avg     0.9912    0.9910    0.9911       450
+weighted avg     0.9912    0.9911    0.9911       450
+
+Chu so co recall thap nhat   : 8 (0.9767)
+Chu so co precision thap nhat: 8 (0.9767)
+
+Giai thich:
+- Macro avg va weighted avg gan nhu bang nhau vi so luong anh cua 10 chu so
+  trong tap kiem tra gan nhu can bang (moi lop khoang 43-46 anh), nen trong so
+  theo so mau khong khac nhieu so voi trung binh cong deu.
+
+========================================================================
+baitap07/bai3.py
+========================================================================
+Nguong lon nhat tren tap hoc dat CV recall >= 0.80: 0.17 (CV recall = 0.8090)
+Ket qua tren tap kiem tra (chi mo 1 lan):
+  Recall    = 0.8000 (dat >= 0.80)
+  Precision = 0.5106
+  So ban bi bao = 47 / 300
+
+========================================================================
+baitap07/bai4.py
+========================================================================
+Da luu bieu do: bieu_do/roc.png
+AUC Logistic    : 0.9449
+AUC Rung 200 cay: 0.9249
+
+Nhan xet:
+- Duong Logistic om sat goc tren ben trai hon (AUC cao hon: 0.9449 so voi 0.9249).
+- O doan dau (FPR gan 0) va vung giua, hai duong co giao cat nhe,
+  nhung nhin chung duong Logistic nam phia tren duong cua Rung.
+
+========================================================================
+baitap07/bai5.py
+========================================================================
+Mo hinh        Trang thai   Precision   Recall      F1
+RandomForest   Truoc           0.7727   0.5667  0.6538
+RandomForest   Can bang        0.5385   0.7000  0.6087
+SVC (RBF)      Truoc           0.8824   0.5000  0.6383
+SVC (RBF)      Can bang        0.4464   0.8333  0.5814
+
+Nhan xet: Mo hinh thay doi nhieu nhat la SVC (RBF).
+- SVC (RBF) tang recall manh va giam precision dang ke khi dat class_weight='balanced',
+  trong khi RandomForest it thay doi hon.
+
+========================================================================
+baitap07/bai6.py
+========================================================================
+Thuoc do   Ban dau   Sau khi sai +5 ty   Chenh lech
+MAE         0.2578              0.6745      +0.4167
+RMSE        0.3730              1.5505      +1.1775
+R2          0.9622              0.3475      -0.6148
+
+Giai thich:
+- RMSE thay doi nhieu nhat (+1.1775), R2 giam manh (-0.6148), con MAE chi tang +0.4167.
+- MAE lay trung binh tri tuyet doi sai so, nen 1 can sai them 5 ty chia cho 12 can
+  chi lam MAE tang toi da ~5/12 = 0.4167.
+- RMSE binh phuong sai so truoc khi lay trung binh roi khai can (5^2 = 25),
+  nen mot sai so lon bi phong dai rat manh, khien RMSE va R2 thay doi nhieu.

@@ -1,0 +1,20 @@
+Tinh tay tu bon o:
+  Precision = 17 / (17 + 3) = 0.8500
+  Recall    = 17 / (17 + 13) = 0.5667
+  F1        = 2 x 0.8500 x 0.5667 / (0.8500 + 0.5667) = 0.6800
+
+Tinh bang scikit-learn:
+  Precision = 0.8500
+  Recall    = 0.5667
+  F1        = 0.6800
+
+Bao cao day du:
+              precision    recall  f1-score   support
+
+    khong bo     0.9536    0.9889    0.9709       270
+      bo hoc     0.8500    0.5667    0.6800        30
+
+    accuracy                         0.9467       300
+   macro avg     0.9018    0.7778    0.8255       300
+weighted avg     0.9432    0.9467    0.9418       300
+

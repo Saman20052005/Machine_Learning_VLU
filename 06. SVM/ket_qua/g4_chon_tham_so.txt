@@ -1,0 +1,17 @@
+gamma   tap hoc   tap kiem tra   so vecto HT
+    0.1  0.8356     0.8533         113
+      1  0.8711     0.9200         88
+     10  0.8978     0.9067         128
+    100  0.9422     0.8133         217
+
+Diem kiem dinh cheo, hang la C, cot la gamma
+gamma   0.01    0.10    1.00    10.00
+C                                    
+0.1    0.6578  0.8044  0.8444  0.8578
+1.0    0.8044  0.8178  0.8667  0.8667
+10.0   0.8178  0.8400  0.8711  0.8311
+100.0  0.8178  0.8533  0.8711  0.7467
+
+Cap tot nhat: {'C': 10, 'gamma': 1}
+Diem kiem dinh cheo: 0.8711
+Accuracy tren tap kiem tra: 0.9200

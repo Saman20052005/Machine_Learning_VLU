@@ -1,0 +1,22 @@
+1. Do quan trong theo feature_importances_ (Gini):
+thu_nhap              0.4269
+ty_le_no              0.2696
+so_ngau_nhien         0.1499
+co_viec_on_dinh       0.0773
+so_nguoi_phu_thuoc    0.0764
+
+2. Do quan trong theo permutation_importance (tren tap kiem tra):
+thu_nhap              0.3073
+ty_le_no              0.1993
+co_viec_on_dinh       0.1117
+so_nguoi_phu_thuoc    0.0497
+so_ngau_nhien         0.0017
+
+Thu hang cot 'so_ngau_nhien': feature_importances_ = 3/5, permutation_importance = 5/5
+
+Giai thich:
+- Theo feature_importances_, cot ngau nhien co nhieu gia tri khac nhau (450 muc)
+  nen cay luon tim duoc nguong chia nho tap hoc va cong diem cho no (xep thu 3).
+- Theo permutation_importance tren tap kiem tra, xao tron mot cot vo dung
+  khong lam accuracy giam (hoac tham chi tang nhe, gia tri gan 0 hoac am),
+  nen no roi xuong vi tri thap nhat, phan anh dung muc do huu ich thuc su.

@@ -1,0 +1,155 @@
+========================================================================
+code/m1_lan_truyen_tien.py
+========================================================================
+Mot no-ron:
+  z = 0.8*2.0 + (-0.5)*1.0 + 0.3*3.0 + (-0.2) = 1.80
+  a = sigmoid(z) = 0.8581
+
+Mang giai XOR:
+  x1  x2  h1  h2   y
+   0   0   0   0   0
+   0   1   1   0   1
+   1   0   1   0   1
+   1   1   2   1   0
+
+Tinh ca bang mot lan: [0. 1. 1. 0.]
+
+========================================================================
+code/m2_xor.py
+========================================================================
+Hoi quy logistic: 0.4500
+
+So no-ron an   so tham so   tap hoc   tap kiem tra
+           1            5    0.6533         0.6900
+           2            9    0.6533         0.6900
+           4           17    0.9033         0.9300
+           8           33    0.9167         0.9100
+
+========================================================================
+code/m3_do_lon_mang.py
+========================================================================
+Ba mang              tap hoc   tap kiem tra
+  (2,), alpha 1e-4    0.8444      0.8533
+  (100, 100), 1e-5    1.0000      0.7867
+  (100, 100), 1.0     0.8800      0.9067
+
+alpha      kiem dinh cheo
+  1e-05    0.7867
+  0.001    0.7689
+  0.1      0.7733
+  1.0      0.8578
+  3.0      0.8400
+  10.0     0.8356
+alpha tot nhat = 1.0, tap kiem tra 0.9067
+
+========================================================================
+code/m4_chuan_hoa.py
+========================================================================
+Doan bua ca lop qua : 0.6000
+Khong chuan hoa     : 0.4000
+Co chuan hoa        : 0.9000
+
+Khong chuan hoa, so ban doan qua: 0 tren 30
+
+========================================================================
+code/m5_chu_so.py
+========================================================================
+Kich thuoc cac ma tran trong so: [(64, 100), (100, 10)]
+Tong so tham so: 7510
+So vong hoc: 144
+Mat mat vong 1: 2.5206, vong 10: 0.4448, vong cuoi: 0.0052
+
+Accuracy tren tap kiem tra: 0.9844
+So anh doan sai: 7 tren 450
+  anh   6: that la 9, doan la 3
+  anh  61: that la 5, doan la 7
+  anh  77: that la 2, doan la 1
+  anh  85: that la 9, doan la 7
+  anh 276: that la 8, doan la 2
+  anh 428: that la 7, doan la 9
+  anh 443: that la 4, doan la 7
+
+Dung som sau 44 vong, accuracy 0.9578
+
+Logistic co chuan hoa  0.9711
+KNN, k = 5             0.9867
+SVM kernel RBF         0.9911
+
+========================================================================
+baitap09/bai1.py
+========================================================================
+Diem   tu tinh (numpy)   mlp.predict_proba   chenh lech
+  1       0.0175579854        0.0175579854   0.00e+00
+  2       0.9994348320        0.9994348320   0.00e+00
+  3       0.7943310566        0.7943310566   0.00e+00
+  4       0.1344008896        0.1344008896   2.78e-17
+  5       0.9578057181        0.9578057181   0.00e+00
+
+Hai ket qua khop hoan toan toi sai so dau phay dong.
+
+========================================================================
+baitap09/bai2.py
+========================================================================
+x1  x2   h1   h2    y
+ 0   0    0    0    0
+ 0   1    0    1    1
+ 1   0    1    0    1
+ 1   1    0    0    0
+
+Giai thich:
+- Khi x1 = x2 ((0,0) hoac (1,1)): x1 - x2 = 0 va x2 - x1 = 0,
+  nen h1 = 0, h2 = 0, suy ra y = 0.
+- Khi x1 != x2 ((0,1) hoac (1,0)): mot hieu bang +1 va hieu con lai bang -1
+  (bi ReLU cat ve 0), nen h1 + h2 = 1 + 0 = 1.
+- Hai no-ron an tao thanh phep |x1 - x2|, tinh dung XOR cho 4 dau vao.
+
+========================================================================
+baitap09/bai3.py
+========================================================================
+activation   tap hoc   tap kiem tra
+  logistic    0.8400      0.8533
+  tanh        0.8667      0.9067
+  relu        0.8800      0.9067
+
+Nhan xet: Ham kich hoat cho accuracy tap kiem tra cao nhat la 'tanh' (0.9067).
+
+========================================================================
+baitap09/bai4.py
+========================================================================
+learning_rate_init   n_iter_   mat mat cuoi   accuracy test
+  0.0001                 582         0.0189          0.9889
+  0.001                  144         0.0052          0.9844
+  0.01                    38         0.0011          0.9778
+  0.1                     30         0.1126          0.9622
+
+Da luu bieu do: bieu_do/toc_do_hoc.png
+Nhan xet:
+- Toc do hoc qua nho (0.0001): mat mat giam rat cham, can nhieu vong hoc (cham toi da max_iter).
+- Toc do hoc qua lon (0.1): buoc nhay qua manh, duong mat mat dao dong hoac dung som voi
+  accuracy thap hon muc chuan (0.001).
+
+========================================================================
+baitap09/bai5.py
+========================================================================
+Cap tham so tot nhat: {'mlpclassifier__alpha': 1, 'mlpclassifier__hidden_layer_sizes': (50,)}
+Diem CV tot nhat    : 0.9785
+Accuracy test (MLP) : 0.9822
+Accuracy test (SVM) : 0.9911
+
+Nhan xet: MLP sau do luoi van chua vuot duoc SVM (0.9911) tren bo du lieu nho nay.
+
+========================================================================
+baitap09/bai6.py
+========================================================================
+MAE tren tap kiem tra (ty dong):
+  MLPRegressor     : 0.5008
+  LinearRegression : 0.2578
+
+Du doan gia can 250 m2 (ty dong):
+  MLPRegressor     : 28.18
+  LinearRegression : 19.91
+
+Nhan xet:
+- Voi ham kich hoat ReLU, MLPRegressor keo dai tuyen tinh ngoai vung du lieu hoc
+  nen ngoai suy tot hon nhieu so voi cay quyet dinh hay KNN (khong bi dung yen o gia max),
+  tuy nhien doan gia van co the lech chut it so voi duong thang hoi quy tuyen tinh.

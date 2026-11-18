@@ -1,0 +1,5 @@
+Nguong lon nhat tren tap hoc dat CV recall >= 0.80: 0.17 (CV recall = 0.8090)
+Ket qua tren tap kiem tra (chi mo 1 lan):
+  Recall    = 0.8000 (dat >= 0.80)
+  Precision = 0.5106
+  So ban bi bao = 47 / 300

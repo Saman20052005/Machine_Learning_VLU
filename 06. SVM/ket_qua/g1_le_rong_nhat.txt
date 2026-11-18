@@ -1,0 +1,15 @@
+w1 = -0.831, w2 = -0.355, b = 4.820
+Do rong cua le = 2 / 0.9039 = 2.2126
+
+So vecto ho tro: 3
+  diem 18: x1 = 5.20, x2 = 4.22, lop 0, f(x) = -1.000
+  diem 10: x1 = 2.88, x2 = 4.02, lop 1, f(x) = +1.000
+  diem 13: x1 = 3.59, x2 = 2.36, lop 1, f(x) = +1.000
+
+|f(x)| nho nhat cua cac diem khac: 1.059
+
+Hoc lai chi voi vecto ho tro:
+  w1 = -0.831, w2 = -0.355, b = 4.821
+
+Diem (3.0, 3.0): f(x) = +1.262, doan lop 1
+Diem (5.0, 4.5): f(x) = -0.933, doan lop 0

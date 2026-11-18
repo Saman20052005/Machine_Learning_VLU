@@ -1,0 +1,20 @@
+Kich thuoc cac ma tran trong so: [(64, 100), (100, 10)]
+Tong so tham so: 7510
+So vong hoc: 144
+Mat mat vong 1: 2.5206, vong 10: 0.4448, vong cuoi: 0.0052
+
+Accuracy tren tap kiem tra: 0.9844
+So anh doan sai: 7 tren 450
+  anh   6: that la 9, doan la 3
+  anh  61: that la 5, doan la 7
+  anh  77: that la 2, doan la 1
+  anh  85: that la 9, doan la 7
+  anh 276: that la 8, doan la 2
+  anh 428: that la 7, doan la 9
+  anh 443: that la 4, doan la 7
+
+Dung som sau 44 vong, accuracy 0.9578
+
+Logistic co chuan hoa  0.9711
+KNN, k = 5             0.9867
+SVM kernel RBF         0.9911

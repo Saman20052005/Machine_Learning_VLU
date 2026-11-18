@@ -1,0 +1,13 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><title>Lab09 - bai2</title><style>body{margin:0;background:#10202e;color:#e6edf3;padding:28px;}pre{font:19px/28px Consolas,monospace;margin:0;white-space:pre-wrap;}.cmd{color:#81e6d9;margin-bottom:24px;}</style><pre class="cmd">&gt; python baitap09/bai2.py</pre><pre>x1  x2   h1   h2    y
+ 0   0    0    0    0
+ 0   1    0    1    1
+ 1   0    1    0    1
+ 1   1    0    0    0
+
+Giai thich:
+- Khi x1 = x2 ((0,0) hoac (1,1)): x1 - x2 = 0 va x2 - x1 = 0,
+  nen h1 = 0, h2 = 0, suy ra y = 0.
+- Khi x1 != x2 ((0,1) hoac (1,0)): mot hieu bang +1 va hieu con lai bang -1
+  (bi ReLU cat ve 0), nen h1 + h2 = 1 + 0 = 1.
+- Hai no-ron an tao thanh phep |x1 - x2|, tinh dung XOR cho 4 dau vao.
+</pre></html>

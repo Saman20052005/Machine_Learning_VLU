@@ -1,0 +1,22 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><title>Lab05 - bai1</title><style>body{margin:0;background:#10202e;color:#e6edf3;padding:28px;}pre{font:19px/28px Consolas,monospace;margin:0;white-space:pre-wrap;}.cmd{color:#81e6d9;margin-bottom:24px;}</style><pre class="cmd">&gt; python baitap05/bai1.py</pre><pre>Da luu hinh: bieu_do/cay_nam_la.png
+Da luu hinh: bieu_do/cay_sau_2.png
+
+Cay sau 2 dang chu:
+|--- thu_nhap &lt;= 15.050
+|   |--- ty_le_no &lt;= 0.615
+|   |   |--- weights: [68.000, 53.000] class: 0
+|   |--- ty_le_no &gt;  0.615
+|   |   |--- weights: [114.000, 14.000] class: 0
+|--- thu_nhap &gt;  15.050
+|   |--- ty_le_no &lt;= 1.020
+|   |   |--- weights: [27.000, 145.000] class: 1
+|   |--- ty_le_no &gt;  1.020
+|   |   |--- weights: [20.000, 9.000] class: 0
+
+Nhan xet:
+- Hai la ben trai cua cay sau 2 deu co cung ket luan la class 0 (tre han).
+- Cay van chia nut do vi phep chia lam giam chi so Gini trung binh co trong so:
+  mot nhanh tro nen rat thuan khiet (114 tre han, 14 dung han, gini=0.195),
+  con nhanh kia gan 50-50 (68 tre han, 53 dung han). Cay chi nhin muc giam Gini,
+  khong quan tam hai la con co cung nhan du doan hay khong.
+</pre></html>

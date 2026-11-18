@@ -1,0 +1,5 @@
+Doan bua ca lop qua : 0.6000
+Khong chuan hoa     : 0.4000
+Co chuan hoa        : 0.9000
+
+Khong chuan hoa, so ban doan qua: 0 tren 30

@@ -1,0 +1,6 @@
+activation   tap hoc   tap kiem tra
+  logistic    0.8400      0.8533
+  tanh        0.8667      0.9067
+  relu        0.8800      0.9067
+
+Nhan xet: Ham kich hoat cho accuracy tap kiem tra cao nhat la 'tanh' (0.9067).

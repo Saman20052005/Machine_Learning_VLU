@@ -1,0 +1,12 @@
+Mot no-ron:
+  z = 0.8*2.0 + (-0.5)*1.0 + 0.3*3.0 + (-0.2) = 1.80
+  a = sigmoid(z) = 0.8581
+
+Mang giai XOR:
+  x1  x2  h1  h2   y
+   0   0   0   0   0
+   0   1   1   0   1
+   1   0   1   0   1
+   1   1   2   1   0
+
+Tinh ca bang mot lan: [0. 1. 1. 0.]
